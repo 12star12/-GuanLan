@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- 1. 标题区域 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="观澜 Guanlan"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="4dp"/>
+
+        <!-- 2. 个人信息区域（课程要求：姓名和学号，暂留空，稍后填） -->
+        <TextView
+            android:id="@+id/tv_student_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="姓名：宋欣欣  学号：2307010317"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="#666666"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- 3. 财富数据展示区域 -->
+        <TextView
+            android:id="@+id/tv_total_assets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="总资产：¥ 0.00"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- 总负债 -->
+        <TextView
+            android:id="@+id/tv_total_liabilities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="总负债：¥ 0.00"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- 净资产 -->
+        <TextView
+            android:id="@+id/tv_net_worth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="净资产：¥ 0.00"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#2196F3"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:id="@+id/tv_total_income"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="本期收入：¥ 0.00"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_total_expense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="本期支出：¥ 0.00"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_total_balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="本期结余：¥ 0.00"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#4CAF50"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- 4. 功能按钮 -->
+        <Button
+            android:id="@+id/btn_balance_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="查看资产负债表"
+            android:textSize="18sp"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btn_add_transaction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="新增流水记录"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+</ScrollView>

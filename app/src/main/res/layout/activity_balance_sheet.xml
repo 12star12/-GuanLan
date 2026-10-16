@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="姓名：宋欣欣   学号：2307010317"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:textColor="#666666"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="资产负债表"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- 接收首页传递的数据 -->
+    <TextView
+        android:id="@+id/tv_received_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="接收到的数据：暂无"
+        android:textSize="18sp"
+        android:textColor="#2196F3"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- 资产录入区域 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加资产项目："
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/et_asset_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="资产名称（如：现金、支付宝）"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/et_asset_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="资产金额"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btn_add_asset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加资产"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- 资产列表展示 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="现有资产列表："
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <ListView
+        android:id="@+id/lv_assets"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="返回首页"/>
+
+</LinearLayout>
